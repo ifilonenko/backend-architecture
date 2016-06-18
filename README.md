@@ -12,11 +12,11 @@ A correctly configured Flume agent and a pipeline of Flume agents created by con
 Each Flume agent has three components: the source, the channel, and the sink. 
 The source is responsible for getting events into the Flume agent, while the sink is responsible for removing the events from the agent and forwarding them to the next agent in the topology, or to HDFS, HBase, Solr, etc. 
 The channel is a buffer that stores data that the source has received, until a sink has successfully written the data out to the next hop or the eventual destination.
-![alt text](https://github.com/ifilonenko/backend-architecture/tree/master/spark-streaming/bin/flume1.png "Apache Flume")
+![alt text](https://raw.githubusercontent.com/ifilonenko/backend-architecture/master/spark-streaming/bin/flume1.png "Apache Flume")
 If the number of servers producing data consistently increases, the number of Flume agents in the tier receiving data from the application servers also needs to increase. 
 This means that at some point, it may be required to increase subsequent tiers, though the number of agents in subsequent tiers can be increased at a far slower rate than in the outer tiers. 
 This also ensures increased buffering capacity within the Flume setup, to accommodate the increase in data production.
-![alt text](https://github.com/ifilonenko/backend-architecture/tree/master/spark-streaming/bin/flume2.png "Apache Flume")
+![alt text](https://raw.githubusercontent.com/ifilonenko/backend-architecture/master/spark-streaming/bin/flume2.png "Apache Flume")
 For further reading on Apache Flume click [here](https://flume.apache.org/)
 ### Apache 
 ### Amazon Kinesis
