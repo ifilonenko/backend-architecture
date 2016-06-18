@@ -18,5 +18,12 @@ This means that at some point, it may be required to increase subsequent tiers, 
 This also ensures increased buffering capacity within the Flume setup, to accommodate the increase in data production.
 ![alt text](https://raw.githubusercontent.com/ifilonenko/backend-architecture/master/spark-streaming/bin/flume2.png "Apache Flume")
 For further reading on Apache Flume click [here](https://flume.apache.org/)
-### Apache 
-### Amazon Kinesis
+### Apache Kafka
+### Amazon Kinesis (using this)
+## Database Systems
+### HDFS
+### HBase
+### Cassandra
+### DynamoDB (using this)
+## In-Memory Cluster Computing
+### Spark Streaming
