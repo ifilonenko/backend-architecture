@@ -26,4 +26,4 @@ For further reading on Apache Flume click [here](https://flume.apache.org/)
 ### Cassandra
 ### DynamoDB (using this)
 ## In-Memory Cluster Computing
-### Spark Streaming
+### Spark Streaming (using this)
